@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TenderHunt_BATA_2.1.3</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='website.css'>
+</head>
+<body>
+<div class="page1">    
+    <div class="top_bar"><h1><label>TenderHunt</label></h1>
+        <ul class="ullistForNaveBar">
+            <li class="leftbarcontaner"><label><b id="current-time">ERROR</b></label></li>
+            <!-- <li class="leftbarcontaner"><div class="logo"></div></li> -->
+            <li class="leftbarcontaner"><div class="diveder"></div></li>
+            <li class="leftbarcontaner"><div class="warpOfBUT"><div class="toggleButton"></div></div></li>
+        </ul>
+    </div>
+
+    <div class="xloutputBoxBar"></div>
+    <div class="xloutputBox">
+        <div id="card-container"></div>
+    </div>
+    <div class="left-cardbox">
+        <div class="left-midcardbox">
+            <div class="WebsiteName"><label>Website</label>
+                <div class="WebsiteCantaner">
+                <div class="dropdown-toggle" id="dropdownToggle"> All Selected</div>
+                    <div class="DropdownWebsiteBox" id="dropdownContent">
+                        <input type="checkbox" id="all_website"  value="all_website" checked>
+                        <label for="all_website">All website</label><br>
+
+                        <input type="checkbox" id="web1"  class="website-checkbox" data-json="./json/CentralPublicProcurementPortal.json" value="CPP Portal" checked>
+                        <label for="web1">Central Public Portal</label><br>
+
+                        <input type="checkbox" id="web2"  data-json="./json/HEL.json" value="BHEL" checked>
+                        <label for="web2">BHEL</label><br>       
+
+                        <input type="checkbox" id="web3"  data-json="./json/COALINDIALTD.json" value="COAL INDIA LTD" checked>
+                        <label for="web3">COAL INDIA LTD</label><br>
+
+                        <input type="checkbox" id="web12"  data-json="./json/CPCL.json" value="CPCL" checked>
+                        <label for="web12">CPCL</label><br>
+
+                        <input type="checkbox" id="web4"  data-json="./json/IOCL.json" value="IOCL" checked>
+                        <label for="web4">IOCL</label><br>
+
+                        <input type="checkbox" id="web5"  data-json="./json/NTPC.json" value="NTPC" checked>
+                        <label for="web5">NTPC</label><br>
+
+                        <input type="checkbox" id="web11"  data-json="./json/Haryana.json" value="Haryana" checked>
+                        <label for="web11">Haryana</label><br>
+
+                        <input type="checkbox" id="web6"  data-json="./json/MP.json" value="MP" checked>
+                        <label for="web6">MP</label><br>
+
+                        <input type="checkbox" id="web7"  data-json="./json/Jharkhand.json" value="Jharkhand" checked>
+                        <label for="web7">Jharkhand</label><br>
+                        
+                        <input type="checkbox" id="web8"  data-json="./json/estBengal.json" value="West Bengal" checked>
+                        <label for="web8">West Bengal</label><br>
+                        
+                        <input type="checkbox" id="web9"  data-json="./json/Rajasthan.json" value="Rajasthan" checked>
+                        <label for="web9">Rajasthan</label><br>
+
+                        <input type="checkbox" id="web10"  data-json="./json/gem.json" value="Gem" checked>
+                        <label for="web10">GEM</label><br>
+
+                 
+
+
+
+                    </div>
+
+                    
+                </div>
+
+                
+            </div>
+            <div class="Date"><label>Date</label><br>
+                <div class="DateCantaner">
+
+                    <input type="radio" id="Today" name="time_line" value="today" checked>
+                    <label for="Today"> Today </label><br>
+
+                    <input type="radio" id="Recent" name="time_line" value="Recent">
+                    <label for="Recent"> Last 3 day  </label><br>
+
+                    <input type="radio" id="date" name="time_line" >
+                    <label for="date"><input type="date" id="date1"><br></label>
+
+                    <input type="radio" id="All_time" name="time_line" value="All_time">
+                    <label for="All_time"> All time  </label><br>
+
+
+                    
+
+                </div>
+            </div>
+            <div class="boder123">
+                <input type="checkbox" id="close" checked>
+                <label for="close"> Hide Close Tenders </label><br>
+
+                <input type="checkbox" id="black_list" checked>
+                <label for="black_list"> Hide Blacklist Tenders </label><br><br>
+            </div>
+            <!-- <input type="checkbox" id="black_list" checked>
+            <label for="black_list">Show Fav tenders </label><br> -->
+
+            <div id="SearchBut"><label>Search</label></div>
+
+        </div>
+    </div>
+
+<label>
+    <div class="page404erre ACTIVE"><div class="forOfor">4O4</div><div class="error">ERROR</div><div class="data_was">DATA WAS NOT FOUND</div> </div>
+</label>
+</div>
+    <div class="dissine"> Designed with ❤️ by Yashvardhan Ashok if any error in the TenderHunt or ATF contect via email on yashvardhan577@gmail.com  </div>
+
+    <script src='website.js'></script>
+</body>
+</html>

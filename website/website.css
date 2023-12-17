@@ -1,0 +1,709 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap'); */
+/* font-family: 'Bricolage Grotesque', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.red-text{
+  color: red;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--card); 
+  border-radius: 3vh;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(52, 58, 67); 
+}
+
+.dark {
+  --gemtextcard_2:rgba(176, 176, 176, 0.436);
+  --background: rgb(17, 24, 39);
+  --card: rgb(31, 41, 55);
+  --textcard: rgb(225, 225, 225);
+  --textcard_2: rgba(225, 225, 225, 0.49);
+  --textcard_3: rgba(255, 255, 255, 0.711);
+  --webbox_colorBack: rgba(16, 31, 52, 0.647);
+  --subox:white;
+  --suboxtext:rgb(41, 51, 64);
+  --leftcardbox:white;
+  --dayandnightmode:white;
+}
+
+:root {
+  --gemtextcard_2:rgb(50, 66, 89);
+  --background: 	rgb(222, 222, 222);
+  --card: #fafafa;
+  --textcard: rgb(17, 24, 39);
+  --textcard_2: rgb(31, 41, 55);
+  --textcard_3: rgba(31, 41, 55, 0.753);
+  --webbox_colorBack: rgb(60, 89, 170) ;
+  --subox:rgb(60, 89, 170);
+  --suboxtext:white;
+  --leftcardbox:white;
+  --dayandnightmode:rgb(154, 154, 154);
+
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:var(--background);
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* bar bar bar  *//* bar bar bar  *//* bar bar bar  *//* bar bar bar  *//* bar bar bar  */
+
+.top_bar{
+  position: absolute;
+  top: 6.9vh;
+  width: 97vw;
+  left: 49.8%;
+  transform: translate(-50%, -50%);
+  background-color: var(--card);
+  color: var(--textcard);
+  height: 10vh;
+  border-bottom-left-radius:0.5vh ;
+  border-bottom-right-radius:0.5vh ;
+  border-radius: 3vh;
+}
+.top_bar h1{
+  position: absolute;
+  /* left:1.3vw; */
+  line-height: 0;
+  margin: 43px 30px;
+  /* top:2vh; */
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.ullistForNaveBar{
+  position: absolute;
+  font-size: 2.8vh;
+  line-height: 10.1vh;
+  top:-3.1vh;
+  right:10px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.leftbarcontaner{
+  list-style-type: none;
+  z-index: 2;
+  padding-right:1vw;
+  float: right;
+}
+.logo{
+  margin-top:3.3vh ;
+  margin-left:-1vh ;
+  margin-right:-1.4vh ;
+  width: 25px;
+  height: 25px;
+  background-color: var(--dayandnightmode);
+  border-radius:10vh ;  
+
+}
+
+.diveder{
+  margin-top:2.8vh ;
+  height: 4.5vh;
+  width: 0.3vh;
+  background-color: rgb(221, 221, 221);
+}
+
+.toggleButton{
+  width: 100%;
+  height:100%;
+  background-image: radial-gradient(circle, #fcb033, #fcb033, #fcb033, #fcb033, #fcb033, #fcad2f, #fca92c, #fca628, #fc9e20, #fb9618, #fb8e10, #fa8607);
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 4rem 0rem #FCB033,0rem 0rem 15rem 0rem    #FA8607;
+}
+
+
+@keyframes sunlight {
+  0%
+    {box-shadow: 0rem 0rem 2rem 0.3rem #FCB033,0rem 0rem 10rem 0.6rem    #FA8607;}  
+  50%
+    {box-shadow: 0rem 0rem 3rem 0.3rem #FCB033,0rem 0rem 10rem 0.3rem    #FA8607;}
+  100%
+    {box-shadow: 0rem 0rem 2rem 0.3rem #FCB033,0rem 0rem 10rem 0.6rem    #FA8607;}
+}
+
+.warpOfBUT{
+position: relative;
+  overflow: hidden;
+  margin-top:3.3vh ;
+  margin-left:-0.5vh ;
+  margin-right:-0vh ;
+  width:1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  animation: sunlight 4s linear infinite;
+}
+
+
+
+.warpOfBUT.ACTIVE{
+  overflow: hidden;
+  animation: mooncy-1an 4s linear infinite;
+}
+
+.warpOfBUT.ACTIVE .toggleButton{
+  background-image: radial-gradient(circle, #f0efe2, #eae9dd, #e4e3d9, #deded4, #d8d8d0, #d3d3cb, #cdcdc7, #c8c8c2, #c2c2bc, #bcbcb7, #b7b7b1, #b1b1ac);
+}
+
+@keyframes mooncy-1an {
+  0%
+    {box-shadow: 0rem 0rem 2rem 0rem #f0efe2,0rem 0rem 10rem 0rem    #b1b1ac;}  
+  50%
+    {box-shadow: 0rem 0rem 6rem 0rem #f0efe2,0rem 0rem 20rem 0rem    #b1b1ac;}
+  100%
+    {box-shadow: 0rem 0rem 2rem 0rem #f0efe2,0rem 0rem 10rem 0rem    #b1b1ac;}
+}
+
+
+.warpOfBUT.ACTIVE .toggleButton::before{
+  margin-top:-1vh ;
+  margin-left:-1vh ;
+  opacity: 1;
+}
+
+
+.toggleButton::before{
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  margin-top:-3vh ;
+  margin-left:-3vh ;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(54, 60, 66);
+  border-radius:10vh ;
+opacity: 0;
+
+}
+
+
+
+
+/* card *//* card *//* card *//* card *//* card */
+.xloutputBox{
+  position: absolute;
+  right: 0.7vw;
+  top: 14vh;
+  max-height: 84vh;
+  overflow: auto;
+  padding-right: 0.5vw;
+  border-radius: 3vh;
+}
+
+
+.card{
+
+  position: absolute;
+  top:0%;
+  height: 18vh;
+  position: relative;
+  margin-top: 3vh;
+  padding: 1vh;
+  background-color: var(--card);
+  color: var(--textcard);  
+  width: 80vw;
+  border-radius: 3vh;
+  transition: 0.1s;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(1, 1, 1, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-UrlName{
+  padding: 0;
+  margin:-1vh;
+  width: 20vw;
+  position: absolute;
+  color: var(--leftcardbox);
+  background-color: var(--webbox_colorBack);
+  height: 100%;
+  border-top-left-radius: 3vh;
+  border-bottom-left-radius: 3vh;
+}
+
+.remove-card-button{
+  position: absolute;
+  width: 1.5vw;
+  height: 3vh;
+  border-radius: 50vh;
+  background-color: rgba(0, 255, 0, 0.803);
+  transition: 0.5s;
+}
+
+.INremove-card-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1.0vw;
+  height: 2.0vh;
+  border-radius: 50vh;
+  /* background-color: red; */
+  background-color: rgb(60, 89, 170);
+  background-color: var(--card);
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+.remove-card-button:hover .INremove-card-button{
+  width: .65vw;
+  height: 1.4vh;
+  transition: 0.5s;
+} 
+
+.remove-card-button:hover {
+background-color: red;
+} 
+
+.card-UrlNameTextbox{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 5vh;
+  position: absolute;
+  bottom: 1vh;
+  width: 100%;
+  text-align:center;
+  /* background-color: aqua; */
+}
+
+#cardleftbox{
+  left: 20.6vw;
+  width: 55vw;
+  text-align:left;
+  position: absolute;
+  bottom: 1vh;
+  height: 9.0vh;  
+  font-family: 'Lato', sans-serif;
+}
+
+.card-tile p{
+  line-height: 0;
+  font-weight: bold;
+  color: var(--textcard_2);
+  margin-bottom: 1vh;
+}
+
+.card-tile_date{
+  font-size:2vh;
+  transition: 0.5s ease-in-out;
+}
+
+/* .card:hover .card-tile_date{
+  opacity: 0;
+} */
+
+.card-tile{
+  position: absolute;
+  font-size: 2.7vh;
+  bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.xloutputBox{
+  overflow-x: hidden;
+
+}
+.card-tile h8{
+  overflow-x: hidden;
+  font-size: 2vh;
+  max-width: 100%;
+  color: var(--gemtextcard_2);
+}
+
+
+.card:hover .card-tile {
+  -webkit-line-clamp: 5; /* Change to 3 lines when card is hovered */
+  transition: 1s;
+  
+}
+
+
+
+
+
+
+/* date  */
+.progress-container {
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  width: 13vw;
+  height: 1vh;
+  right: 1.2vw;
+  top: 2vh;
+  background-color: var(--background);
+  border-radius: 3vw;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 3vw;
+  /* background-color: #4caf4f; */
+}
+
+.card-lastDate{
+  font-size: 1.9vh;
+  color: var(--textcard_3);
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  right: 1.5vw;
+  top: 3.3vh;
+}
+
+
+.WebsiteName{
+  position: absolute;
+}
+
+
+
+
+/* .UrlName{} */
+
+/* left-cardbox *//* left-cardbox *//* left-cardbox *//* left-cardbox *//* left-cardbox *//* left-cardbox *//* left-cardbox */
+.left-cardbox{
+  position: absolute;
+  left: 0.91vw;
+  top: 14.0vh;
+  width: 15vw;
+  height: 83.8vh;
+  background-color:var(--card);
+
+  border-radius: 3vh;
+  color: var(--textcard);
+}
+
+.left-midcardbox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  height: 82vh;
+  border-radius: 3vh;
+  background-color: var(--left-midcardbox);
+}
+
+.WebsiteName{
+  position: relative;
+  top: 2.5%;
+  left: 7%;
+  height: 10vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.WebsiteCantaner{
+  position: absolute;
+  font-size: 2vh;
+  top: 4.4vh;
+  font-weight:100;
+  left: 0.3vw;
+  padding-left: 1vw;
+  padding-top: 1.2vh;
+  height: 3.5vh;
+  width: 10vw;
+  border-radius: 3vh;
+  color: var(--suboxtext);
+  background-color: var(--subox);
+transition: 0.2s ease-in-out; /* Add a transition for smooth effect */
+} 
+
+
+.WebsiteCantaner:hover{
+  width: 12.9vw;
+  left: -1vw;
+  transition: 0.2s ease-in-out; /* Add a transition for smooth effect */
+  }
+
+.DropdownWebsiteBox{
+  position: absolute;
+  font-size: 2vh;
+  text-align: left;
+  top: 4.7vh;
+  /*  */
+  border: solid var(--card) 5px ;
+  font-weight: 100;
+  padding: 1vh;
+  width: 12.9vw;
+  border-radius: 3vh;
+  z-index: 1;
+  opacity: 0; 
+  visibility: hidden;
+  color: var(--suboxtext);
+  background-color: var(--subox);
+transition:visibility  0.2s ease-in-out; /* Add a transition for smooth effect */
+left: -1vw;
+
+}
+
+
+  
+.WebsiteCantaner:hover  .DropdownWebsiteBox{
+  opacity: 1; /* Change opacity to 1 on hover */
+  visibility: visible;
+transition:visibility  0.2s ease-in-out; /* Add a transition for smooth effect */
+transition: 0.2s ease-in-out; /* Add a transition for smooth effect */
+left: -5px;
+}
+
+/* key */
+.WebsiteCantaner_key{
+  position: absolute;
+  font-size: 2vh;
+  top: 4.4vh;
+  font-weight:100;
+  left: 0.3vw;
+  padding-left: 1vw;
+  padding-top: 1.2vh;
+  height: 3.5vh;
+  width: 10vw;
+  border-radius: 3vh;
+  color: var(--suboxtext);
+  background-color: var(--subox);
+transition: 0.2s ease-in-out; /* Add a transition for smooth effect */
+} 
+
+.DropdownWebsiteBox_key{
+  position: absolute;
+  font-size: 2vh;
+  text-align: left;
+  top: 5vh;
+  font-weight: 100;
+  left: -0vw;
+  padding: 1vh;
+  width: 12.9vw;
+  border-radius: 3vh;
+  z-index: 1;
+  opacity: 0; 
+  visibility: hidden;
+  color: var(--suboxtext);
+  background-color: var(--subox);
+  transition: opacity 0.5s ease-in-out; /* Add a transition for smooth effect */
+}
+
+.WebsiteCantaner_key:hover{
+width: 12.9vw;
+left: -1vw;
+transition: opacity 0.5s ease-in-out; /* Add a transition for smooth effect */
+
+}
+
+.WebsiteCantaner_key:hover .DropdownWebsiteBox_key{
+  opacity: 1; /* Change opacity to 1 on hover */
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out; /* Add a transition for smooth effect */
+}
+
+.space{
+  position: absolute;
+  /* background-color: #4caf4f; */
+  background-color: transparent;
+  
+  height: 7vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.space .DropdownWebsiteBox_key:hover {
+  background-color: aqua;
+}
+
+
+.space:hover{
+  width: 13.9vw;
+}
+
+.space .DropdownWebsiteBox_key{
+  opacity: 1; /* Change opacity to 1 on hover */
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out; /* Add a transition for smooth effect */
+}
+
+
+.Keywords{
+  position: relative;
+  margin-top: 1.5vh;
+  top: 1%;
+  left: 7%;
+  height: 10vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+
+/* date */
+.Date{
+  position: relative;
+  margin-top: 1.3vh;
+  left: 7%;
+  /* height: 10vh; */
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.DateCantaner{
+  font-size: 2vh;
+  font-size: 2vh;
+  font-weight: 100;
+}
+
+.Special_Character{
+  position: relative;
+  left: 7%;
+  height: 10vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+/* SearchBut *//* SearchBut *//* SearchBut *//* SearchBut *//* SearchBut */
+#SearchBut{
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: var(--subox);
+  color: var(--suboxtext);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+#SearchBut:hover{
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: var(--subox);
+  color: var(--suboxtext);
+  font-weight: bold;
+ }
+
+/* CharacterCU *//* CharacterCU *//* CharacterCU *//* CharacterCU */
+.CharacterCU{
+  margin: 0.5vh;
+  font-weight: 100;
+  font-size: 2vh;
+}
+
+/* end end end end */
+.pagedata{
+  position: relative;
+  width: 100vw;
+  min-height: 112.5vh;
+  /* background-color: aqua; */
+}
+.endpage{
+  margin-top: auto;
+  bottom: 0%;
+  width: 97vw;
+  background-color: var(--card);
+  color: var(--textcard);
+  height: 25vh;
+  border-bottom-left-radius:0.5vh ;
+  border-bottom-right-radius:0.5vh ;
+  border-radius: 3vh;
+}
+
+:root{
+  --dissine:black;
+
+}
+.dark {
+  --dissine:rgba(255, 255, 255, 0.774);
+
+}
+
+.dissine{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: -2;
+  color: var(--dissine);
+  
+}
+
+.page1{
+  position: absolute;
+  background-color:var(--background);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+
+/* /page404erre */
+
+
+.page404erre{
+  color: var(--textcard);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 53%;
+  left: 56.5%;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+.page404erre.ACTIVE{
+  display: block;
+}
+
+.forOfor{
+  position: relative;
+font-size: 200px;
+font-weight: bold;
+text-align: center;
+
+}
+
+.error{
+  position: relative;
+  font-size: 200px;
+  margin-top: -6%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data_was{
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-left:33px ;
+  margin-top: -2%;
+  letter-spacing: 14px;
+
+}
+
+.boder123{
+  margin-left: 20px;
+}
