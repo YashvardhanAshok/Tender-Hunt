@@ -4,7 +4,7 @@ ATF & Tender Hunt aim to simplify tenders searching on the web. It scans various
 <h2>ATF</h2>
 ATF serves as the project's backbone. While not detailed in this repository for simplicity, ATF searches 12 designated websites (more can be added), extracts keywords from a file, conducts searches, and generates a JSON file for each website.
 
-<!-- ❮img src="images/you-picture.png" width="100" ❯ -->
+❮img src="img/Screenshot%202023-12-18%20121321.png"❯
 
 
 <h2>Tender Hunt</h2>
