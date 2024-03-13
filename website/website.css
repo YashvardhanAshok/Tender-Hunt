@@ -742,6 +742,22 @@ text-align: center;
   top: 50%;
 
 }
+
+.page404erre{
+  display: none;
+}
+
+.dissine{
+  display: none;
+}
   
 }
 
+
+.page404erre{
+  display: block;
+}
+
+.dissine{
+  display: block;
+}
