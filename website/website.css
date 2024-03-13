@@ -761,3 +761,7 @@ text-align: center;
 .dissine{
   display: block;
 }
+
+.curection{
+  letter-spacing: 3px;
+}
