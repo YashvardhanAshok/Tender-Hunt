@@ -31,10 +31,18 @@ Tender Hunt is the project's front end, presenting results in a user-friendly ma
 
 </p>
 <img src="img/img3.png" width="100%">
-<p>
 
+<p>
+Each card includes the website name, bit ID, closing date, opening date, title, blacklist status, search date, and a brief summary of the tender details. 
 </p>
+
 <img src="img/img4.png" width="100%">
-<p>
 
+<p>
+Clicking on a card,Tender Hunt will either download all documents related to it or redirect you to the specific website 
 </p>
+
+<img src="img/img7.png" width="100%">
+<img src="img/img8.png" width="100%">
+
+<b>The aim of Tender Hunt and ATF is to alleviate the workload of employees and enhance the workflow efficiency within the company</b>

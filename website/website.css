@@ -707,3 +707,41 @@ text-align: center;
 .boder123{
   margin-left: 20px;
 }
+
+
+.DATA_UPTODATE{
+  font-size: 20PX;
+  font-weight: bold;
+}
+.bloker{
+  display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  body{
+    overflow: hidden;
+  }
+  .bloker{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  
+    background-color: white;
+    
+  } 
+.text_inside_the_block{
+  width: 90%;
+  position: absolute;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+
+}
+  
+}
+
