@@ -6,6 +6,10 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
+#card-container{
+    background-color: #dedddc;
+
+}
 
 /* Track */
 .red-text{
